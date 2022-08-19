@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+</head>
+<body>
+    <form action="">
+        <p>Please select your favorite Web language:</p>
+        <div>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+        </div>
+        <div>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+        </div>
+        <div>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+        </div>
+
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <p id="demo"></p>
+
+<script>
+
+    let element = document.getElementsByTagName("label");
+    console.log(element);
+    let array = [element];
+    console.log(array);
+    array.forEach(element => {
+        document.getElementById("demo").innerHTML = element.text;
+    });
+
+
+
+</script>
+
+</body>
+</html> 
